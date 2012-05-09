@@ -22,6 +22,11 @@ Give your app an inbox easily::
     # Bind directly.
     inbox.serve(address='0.0.0.0', port=4467)
 
+The handler accepts 3 arguments:
+
+* **to**, a list of email addresses the email was sent to
+* **sender**, the "from" email address, as a string
+* **body**, the body of the email, including headers, as a string.
 
 You can also defer to the commandline::
 
